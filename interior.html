@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Design - Livora</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        nav h1 {
+            font-family: "Cinzel", serif;
+            font-size: 1.8em;
+            cursor: pointer;
+        }
+
+        nav .options {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav .options a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        nav .options a:hover {
+            color: rgb(254, 204, 42);
+        }
+
+        .hero {
+            text-align: center;
+            background: url(images/services.avif) no-repeat center center/cover;
+            color: white;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-family: "Cinzel", serif;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .content {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .content h2 {
+            font-family: "Cinzel", serif;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        .content ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .content ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .content ul li:before {
+            content: '✔';
+            color: rgb(254, 204, 42);
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+
+        .services-section {
+            background-color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .services-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: rgb(254, 204, 42);
+        }
+
+        .service-card {
+            display: inline-block;
+            width: 30%;
+            margin: 20px;
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card h3 {
+            font-family: "Cinzel", serif;
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 1em;
+            color: #666;
+        }
+
+        .button {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .button a {
+            background-color: rgb(254, 204, 42);
+            color: black;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .button a:hover {
+            background-color: black;
+            color: rgb(254, 204, 42);
+        }
+
+        .testimonials-section {
+            padding: 60px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .testimonial {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+
+        .testimonial img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .testimonial p {
+            font-style: italic;
+            color: #444;
+            font-size: 1.2em;
+        }
+
+        .testimonial h4 {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+    
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            z-index: 1;
+        }
+    
+        .dropdown-content a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+            font-size: 1em;
+        }
+    
+        .dropdown-content a:hover {
+            background-color: rgba(254, 204, 42, 0.8);
+            color: black;
+        }
+    
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+    
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            z-index: 1;
+        }
+    
+        .dropdown-content a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+            font-size: 1em;
+        }
+    
+
+        .dropdown-content a:hover {
+            color: rgb(254,204,42);
+        }
+    
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Livora</h1>
+            <div class="options">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <a href="#">Services</a>
+                    <div class="dropdown-content">
+                        <a href="interior.html">Interior Design</a>
+                        <a href="renovation.html">Renovation and Remodeling</a>
+                        <a href="space.html">Space Planning</a>
+                    </div>
+                </div>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Interior Design</h1>
+            <p>Crafting spaces that inspire and captivate. Your vision, our creativity.</p>
+        </section>
+
+        <section class="content">
+            <h2>Why Choose Us?</h2>
+            <p>
+                At Livora, we specialize in turning your dreams into reality. Whether it's your home, office, or a
+                specific room, we bring modern and elegant designs tailored to your needs. Let us help you create a
+                space that resonates with your personality and lifestyle.
+            </p>
+
+            <h2>Our Process</h2>
+            <ul>
+                <li><strong>Consultation:</strong> Understanding your vision and requirements.</li>
+                <li><strong>Design:</strong> Creating detailed layouts and mood boards.</li>
+                <li><strong>Execution:</strong> Delivering a space that exceeds your expectations.</li>
+            </ul>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section">
+            <h2>Our Services</h2>
+            <div class="service-card">
+                <h3>Residential Design</h3>
+                <p>We design cozy, functional, and stylish homes that reflect your personality and lifestyle.</p>
+            </div>
+            <div class="service-card">
+                <h3>Commercial Design</h3>
+                <p>Our commercial designs are tailored to enhance your business image while ensuring practicality.</p>
+            </div>
+            <div class="service-card">
+                <h3>Consulting</h3>
+                <p>We offer expert consulting for DIY projects, helping you create a professional interior on your own.</p>
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial">
+                <img src="images/img.avif" alt="Client 1">
+                <div>
+                    <p>"Livora transformed our living room into a space that feels both luxurious and cozy. Their design exceeded our expectations!"</p>
+                    <h4>- Sarah W., Homeowner</h4>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <img src="images/client2.avif" alt="Client 2">
+                <div>
+                    <p>"The team at Livora took our office space and turned it into a modern, inspiring environment. Highly recommend their work!"</p>
+                    <h4>- John D., Business Owner</h4>
+                </div>
+            </div>
+        </section>
+
+        <div class="button">
+            <a href="book.html">Book a Free Consultancy</a>
+        </div>
+    </main>
+</body>
+
+</html>

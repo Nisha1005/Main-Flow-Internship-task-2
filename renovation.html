@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renovation and Remodeling - Livora</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        nav h1 {
+            font-family: "Cinzel", serif;
+            font-size: 1.8em;
+            cursor: pointer;
+        }
+
+        nav .options {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav .options a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        nav .options a:hover {
+            color: rgb(254, 204, 42);
+        }
+
+        .hero {
+            text-align: center;
+            background: url('images/img4.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-family: "Cinzel", serif;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .content {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .content h2 {
+            font-family: "Cinzel", serif;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        .content ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .content ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .content ul li:before {
+            content: '✔';
+            color: rgb(254, 204, 42);
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+
+        .renovation-section {
+            padding: 60px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .renovation-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+            color: rgb(254, 204, 42);
+        }
+
+        .renovation-section p {
+            font-size: 1.2em;
+            text-align: center;
+            margin-top: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .renovation-card {
+            display: inline-block;
+            width: 30%;
+            margin: 20px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .renovation-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .renovation-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .renovation-card p {
+            color: #666;
+            font-size: 1em;
+        }
+
+        .button {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .button a {
+            background-color: rgb(254, 204, 42);
+            color: black;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .button a:hover {
+            background-color: black;
+            color: rgb(254, 204, 42);
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+    
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            z-index: 1;
+        }
+    
+        .dropdown-content a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+            font-size: 1em;
+        }
+    
+        .dropdown-content a:hover {
+            color: rgb(254,204,42);
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>Livora</h1>
+            <div class="options">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <a href="#">Services</a>
+                    <div class="dropdown-content">
+                        <a href="interior.html">Interior Design</a>
+                        <a href="renovation.html">Renovation and Remodeling</a>
+                        <a href="space.html">Space Planning</a>
+                    </div>
+                </div>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Renovation & Remodeling</h1>
+            <p>Revamp your spaces with professional renovation and remodeling solutions.</p>
+        </section>
+
+        <section class="content">
+            <h2>Why Choose Our Renovation Services?</h2>
+            <p>
+                Whether it's transforming a single room or a full home makeover, our renovation services are tailored to your needs.
+                We provide expert design, construction, and management services, ensuring quality and satisfaction with every project.
+            </p>
+
+            <h2>Our Renovation Services</h2>
+            <ul>
+                <li><strong>Interior Renovation:</strong> Complete redesign and remodeling of your home or office interior.</li>
+                <li><strong>Exterior Renovation:</strong> Updating the exterior of your home or building for a fresh look.</li>
+                <li><strong>Space Optimization:</strong> Maximizing space usage through modern design techniques.</li>
+            </ul>
+        </section>
+
+        <!-- Renovation Cards Section -->
+        <section class="renovation-section">
+            <h2>Transform Your Space</h2>
+            <p>
+                Whether you're looking to update a kitchen, refresh your living room, or remodel your bathroom, we have the expertise
+                to bring your vision to life. Our team ensures that every renovation project is handled with precision, delivering
+                excellent results on time and within budget.
+            </p>
+
+            <div class="renovation-card">
+                <h3>Residential Renovation</h3>
+                <p>Upgrade your home's interiors with modern designs and functional layouts that suit your lifestyle.</p>
+            </div>
+
+            <div class="renovation-card">
+                <h3>Commercial Renovation</h3>
+                <p>We specialize in office, retail, and restaurant renovations, enhancing your business environment and appeal.</p>
+            </div>
+
+            <div class="renovation-card">
+                <h3>Kitchen & Bathroom Remodeling</h3>
+                <p>From outdated kitchens to cramped bathrooms, we create beautiful, functional spaces for everyday living.</p>
+            </div>
+        </section>
+
+        <div class="button">
+            <a href="book.html">Get Started with Your Renovation</a>
+        </div>
+    </main>
+
+</body>
+
+</html>

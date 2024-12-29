@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        nav h1 {
+            font-family: "Cinzel", serif;
+            font-size: 1.8em;
+            cursor: pointer;
+        }
+
+        nav .options {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav .options a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        nav .options a:hover {
+            color: rgb(254, 204, 42);
+        }
+
+        .about-section {
+            text-align: center;
+            background: url('images/img5.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 100px 20px;
+        }
+
+        .about-section h1 {
+            font-family: "Cinzel", serif;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .about-section p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .content {
+            background-color: white;
+            padding: 50px 20px;
+            text-align: center;
+            color: black;
+            margin-top: 40px;
+        }
+
+        .content h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .values-section {
+            background-color: #f4f4f4;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .values-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .values-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .value-card {
+            background-color: #fff;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .value-card h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .value-card p {
+            font-size: 1.1em;
+            line-height: 1.5;
+        }
+
+        .testimonial-section {
+            background-color: #ececec;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .testimonial-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .testimonials {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .testimonial-card {
+            background-color: #fff;
+            padding: 20px;
+            width: 280px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .testimonial-card p {
+            font-size: 1.1em;
+            line-height: 1.5;
+        }
+
+        .testimonial-card .name {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+    
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            z-index: 1;
+        }
+    
+        .dropdown-content a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+            font-size: 1em;
+        }
+    
+        .dropdown-content a:hover {
+            background-color: rgba(254, 204, 42, 0.8);
+            color: black;
+        }
+    
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>Livora</h1>
+            <div class="options">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <a href="#">Services</a>
+                    <div class="dropdown-content">
+                        <a href="interior.html">Interior Design</a>
+                        <a href="renovation.html">Renovation and Remodeling</a>
+                        <a href="space.html">Space Planning</a>
+                    </div>
+                </div>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="about-section">
+        <h1>About Livora</h1>
+        <p>At Livora, we specialize in creating personalized, functional, and aesthetically pleasing interiors that enhance your lifestyle. Our expert team is passionate about transforming your spaces into beautiful, customized environments that suit your unique needs.</p>
+    </section>
+
+    <section class="content">
+        <h2>Our Vision</h2>
+        <p>We envision a world where every home and office space reflects the true personality of its owner. Our goal is to offer professional interior design services that bring your visions to life, turning any space into a place you'll love.</p>
+
+        <h2>Our Mission</h2>
+        <p>Our mission is to deliver tailor-made interior designs that combine beauty with functionality. We strive to provide exceptional service, quality craftsmanship, and innovative design solutions that exceed our client's expectations.</p>
+    </section>
+
+    <section class="values-section">
+        <h2>Our Core Values</h2>
+        <div class="values-list">
+            <div class="value-card">
+                <h3>Innovation</h3>
+                <p>We embrace new ideas and push the boundaries of design to offer innovative solutions that meet our clients' needs.</p>
+            </div>
+            <div class="value-card">
+                <h3>Quality</h3>
+                <p>We focus on delivering exceptional craftsmanship and materials that last, ensuring your design stands the test of time.</p>
+            </div>
+            <div class="value-card">
+                <h3>Customer Focus</h3>
+                <p>Our customers' satisfaction is at the heart of everything we do. We listen, understand, and design with their needs in mind.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonials">
+            <div class="testimonial-card">
+                <p>"Livora transformed our living room into a cozy, stylish space that perfectly reflects our taste. Highly recommend!"</p>
+                <div class="name">- Sarah T.</div>
+            </div>
+            <div class="testimonial-card">
+                <p>"Their attention to detail and commitment to quality made the entire renovation process smooth and exciting."</p>
+                <div class="name">- Mark D.</div>
+            </div>
+            <div class="testimonial-card">
+                <p>"I am so impressed with the design! Livora made my dream office come to life. Professional and creative team."</p>
+                <div class="name">- James W.</div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

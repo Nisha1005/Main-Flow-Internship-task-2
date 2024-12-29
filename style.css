@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(images/onavif.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.header {
+    position: relative;
+}
+
+
+nav {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+
+}
+
+.options {
+    display: flex;
+    gap: 30px;
+    padding-left: 60%;
+    font-size: 1.2em;
+    padding-top: 10px;
+}
+
+nav h1 {
+    font-family: "Cinzel", serif;
+    margin-left: 50px;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.options :hover {
+    color: rgb(254, 204, 42)
+}
+
+.tagline {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.tagline h1 {
+    font-family: "Roboto", serif;
+    font-size: 3em;
+}
+
+.tagline p {
+    font-family: "Roboto", serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 10px;
+    font-size: 1.1em;
+}
+
+.button {
+    background-color: rgb(254, 204, 42);
+    color: black;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 400px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.tagline .button {
+    display: block;
+    margin: 20px auto 0;
+}
+
+
+.button a {
+        background-color: rgb(254, 204, 42);
+        color: black;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 1.2em;
+        font-weight: bold;
+}
+    
+    
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.8);
+        min-width: 200px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 10px 15px;
+        text-decoration: none;
+        display: block;
+        font-size: 1em;
+    }
+
+    .dropdown-content a:hover {
+        background-color: rgba(254, 204, 42, 0.8);
+        color: rgb(0, 0, 0);
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
